@@ -1,0 +1,70 @@
+:root{
+    --pink: plum;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+    
+li {
+list-style: circle;
+}
+
+.list {
+list-style: square;
+}
+
+#msg {
+font-family: monospace;
+}
+
+.mainlist {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 250px;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    border-radius: 100%;
+    border: none;
+    color: var(--btnfontColor); 
+    background-color: var(--btnBg);
+}
+
+.btn:focus { outline-style: none; }
+
+.light-theme {
+    --bg: var(--pink);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnfontColor: var(--pink);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--pink);    
+    --btnBg: var(--pink);
+    --btnfontColor: var(--black);
+}
+
